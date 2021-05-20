@@ -57,15 +57,35 @@ function ausgabeNameParams(firstName , familyName)
     console.log("Hallo " + firstName + " " + familyName + "!");    
 }
 
-ausgabeNameParams("Frank" ,"Musterann");
+// ausgabeNameParams("Frank" ,"Musterann");
+// ausgabeNameParams("Mustermann" , "Frank");
+// ausgabeNameParams(prompt("Bitte gib deinen Vorname ein!"), prompt("Bitte gib hier deinen Nachnamen ein!"));
 
-ausgabeNameParams(prompt("Bitte gib deinen Vorname ein!"), prompt("Bitte gib hier deinen Nachnamen ein!"));
+// 
+ /***** Funktionen 03a*****/
+//   03a. Vorbereitung
+//    Postulat: one funktion = one job ( uncle bob)
+//    SRP single resonsibility principle
 
-     
- 
+function ausgabeNameParams2(firstName , familyName)
+{
+//  1. Job string composing
+    let gap =" ";
+    let outputStr = "Hallo " + firstName + gap + familyName + "!"
+    
+    //  2.Job : output
+    console.log(outputStr);    
+}
 
+// ausgabeNameParams2("Frank" ,"Mustermann");
 
-
+/********** Funktionen 03B */
+/** 2. Job : Ausgabe */
+// output("Hi");           // Unit-Test TDD
+function output(outputStr) 
+{
+console.log(outputStr);
+}
 
 
 
