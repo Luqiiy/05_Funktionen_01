@@ -80,6 +80,16 @@ function ausgabeNameParams2(firstName , familyName)
 // ausgabeNameParams2("Frank" ,"Mustermann");
 
 /********** Funktionen 03B */
+
+/** 1.JOB : string zusammensetzen */
+// output(getString("Frank" , "Mustermann")); // Test
+function getString(firstName,familyName) {
+    let gap =" ";
+    let outputStr = "Hallo " + firstName + gap + familyName +"!";
+    return outputStr; // Daten ----> an stelle des calls
+    console.log ("heyoooo"); // nach return wir die funktion abgebrochen!
+}
+
 /** 2. Job : Ausgabe */
 // output("Hi");           // Unit-Test TDD
 function output(outputStr) 
